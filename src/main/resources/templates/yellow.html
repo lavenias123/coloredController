@@ -15,6 +15,13 @@
 The content of the document......
 <h1>Yellow</h1>
 <p>Yellow</p>
+<h2>Users</h2>
+<ul>
+	<li th:each="user:${us}">For Each</li>
+		<span th:text="${user.name}" />
+		<span th:text="${user.pwd}" />
+		<span th:text="${user.size}" />
+</ul>
 </body>
 
 </html>
